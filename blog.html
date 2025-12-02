@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Bukidnon Cultural Heritage</title>
+  <meta name="description" content="Read stories about Bukidnon's indigenous culture, traditions, and festivals">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="logon.jpg" alt="Logo" class="logo-img">
+          KulturaTaBukidnon</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container fade-in" style="padding: 3rem 1rem; max-width: 900px;">
+    <header style="text-align: center; margin-bottom: 3rem;">
+      <h1 style="font-size: 3rem; margin-bottom: 1rem;">Cultural Stories & Traditions</h1>
+      <p style="font-size: 1.25rem; color: var(--muted-foreground); max-width: 700px; margin: 0 auto; margin-bottom: 30px;">
+        Dive deep into the rich tapestry of Bukidnon's indigenous heritage through our collection of stories, traditions, and cultural insights.
+      </p>
+    </header>
+
+    <article class="blog-post">
+      <img src="kaamulan.jpg" alt="Kaamulan Festival dancers in vibrant traditional costumes">
+      <div class="blog-post-content">
+        <h2>Kaamulan Festival: A Celebration of Indigenous Unity</h2>
+        
+        <div class="post-meta">
+          <span>👤 Niko Ebasco</span>
+          <span>📅 October 28, 2025</span>
+        </div>
+
+        <p class="post-excerpt">
+          Experience the grandeur of Kaamulan, where seven indigenous tribes unite in a spectacular cultural celebration that honors their ancestors and traditions.
+        </p>
+
+        <div class="post-content" id="post1">
+The Kaamulan Festival is the highlight of Bukidnon's cultural calendar, bringing together the seven indigenous tribes of the province in a magnificent celebration of heritage and unity. Held annually in Malaybalay City, this festival transforms the streets into a vibrant tapestry of colors, music, and dance.
+
+The word "Kaamulan" comes from the Binukid word "amul," meaning "to gather." True to its name, the festival gathers the Bukidnon, Higaonon, Talaandig, Manobo, Matigsalug, Tigwahanon, and Umayamnon tribes in a powerful display of cultural pride.
+
+Participants don intricate traditional costumes adorned with beads, feathers, and handwoven fabrics. The rhythmic beats of indigenous drums fill the air as dancers perform ancestral rituals and tell stories of their people through movement. The festival features street dancing competitions, cultural exhibitions, trade fairs showcasing indigenous crafts, and ritual ceremonies that honor the spirits of nature and ancestors.
+          
+Beyond the spectacle, Kaamulan serves a deeper purpose: preserving indigenous culture for future generations and promoting understanding between indigenous and non-indigenous communities. It's a reminder that despite modernization, the ancient traditions of Bukidnon's first people continue to thrive, offering wisdom and beauty to all who witness them.
+
+<h1 style="font-size: 1.5rem; margin-bottom: 30px; text-align: center; margin-top: 20px;">Tribes in Bukidnon</h1>
+<div class="extra-containers">
+
+  <div class="extra-box">
+    <img src="bukidnon.jpg" alt="Bukidnon Tribe" class="tribe-img">
+    <button class="toggle-btn" onclick="toggleTribe(this)">Bukidnon Tribe ▼</button>
+    <div class="tribe-details">
+      <p><strong>Dance:</strong> Binanog</p>
+      <p>The Binanog dance imitates the flight of a hawk, performed with wing-like movements and gong/kulintang music.</p>
+      <p><strong>Songs:</strong> Antoka, Idangdang</p>
+      <p>The songs highlight bravery, romance, and ancestral stories.</p>
+    </div>
+  </div>
+
+  <div class="extra-box">
+    <img src="higaonon.jpg" alt="Higaonon Tribe" class="tribe-img">
+    <button class="toggle-btn" onclick="toggleTribe(this)">Higaonon Tribe ▼</button>
+    <div class="tribe-details">
+      <p><strong>Dance:</strong> Kaliga / Kaliga-on</p>
+      <p>A ritual dance for thanksgiving, protection, and honoring the spirits.</p>
+      <p><strong>Songs:</strong> Bayok, Olaging</p>
+      <p>Their songs express epic stories and ancient spiritual traditions.</p>
+    </div>
+  </div>
+
+  <div class="extra-box">
+    <img src="manobo.jpg" alt="Manobo Tribe" class="tribe-img">
+    <button class="toggle-btn" onclick="toggleTribe(this)"> Manobo Tribe ▼</button>
+    <div class="tribe-details">
+      <p><strong>Dance:</strong> Dugso</p>
+      <p>A sacred circular dance celebrating gratitude and spiritual offerings.</p>
+      <p><strong>Songs:</strong> Ulaging, Aday</p>
+      <p>The songs tell poetic stories rooted in Manobo heritage.</p>
+    </div>
+  </div>
+
+  <div class="extra-box">
+    <img src="matigsalug.jpg" alt="Matigsalug Tribe" class="tribe-img">
+    <button class="toggle-btn" onclick="toggleTribe(this)">Matigsalug Tribe ▼</button>
+    <div class="tribe-details">
+      <p><strong>Dance:</strong> Inamong</p>
+      <p>A courtship dance representing respect, unity, and admiration.</p>
+      <p><strong>Songs:</strong> Sambolayan, Ilang-Ilang</p>
+      <p>Songs express love, longing, and village life.</p>
+    </div>
+  </div>
+
+  <div class="extra-box">
+    <img src="talaandig.jpg" alt="Talaandig Tribe" class="tribe-img">
+    <button class="toggle-btn" onclick="toggleTribe(this)">Talaandig Tribe ▼</button>
+    <div class="tribe-details">
+      <p><strong>Dance:</strong> Talupak</p>
+      <p>A warrior dance showing bravery and the defense of ancestral land.</p>
+      <p><strong>Songs:</strong> Guman, Lullabies</p>
+      <p>Their songs are rhythmic, symbolic, and deeply spiritual.</p>
+    </div>
+  </div>
+
+  <div class="extra-box">
+    <img src="tigwahanon.jpg" alt="Tigwahanon Tribe" class="tribe-img">
+    <button class="toggle-btn" onclick="toggleTribe(this)">Tigwahanon Tribe ▼</button>
+    <div class="tribe-details">
+      <p><strong>Dance:</strong> Saut</p>
+      <p>A victory dance performed after hunting or battle.</p>
+      <p><strong>Songs:</strong> Ilaning</p>
+      <p>Songs that honor nature and tribal unity.</p>
+    </div>
+  </div>
+
+  <div class="extra-box">
+    <img src="umayamnon.jpg" alt="Umayamnon Tribe" class="tribe-img">
+    <button class="toggle-btn" onclick="toggleTribe(this)">Umayamnon Tribe ▼</button>
+    <div class="tribe-details">
+      <p><strong>Dance:</strong> Tagkal</p>
+      <p>A ritual dance performed to seek healing, guidance, or blessings from the spirits.</p>
+      <p><strong>Songs:</strong> Lantangon</p>
+      <p>Spiritual songs that reflect harmony between nature and ancestral beings.</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function toggleTribe(button) {
+  const details = button.nextElementSibling;
+
+  if (details.style.display === "block") {
+    details.style.display = "none";
+    button.textContent = button.textContent.replace("▲", "▼");
+  } else {
+    details.style.display = "block";
+    button.textContent = button.textContent.replace("▼", "▲");
+  }
+}
+</script>
+</div>
+
+        <button class="btn btn-primary" onclick="togglePost('post1', this)">Read More</button>
+      </div>
+    </article>
+
+    <article class="blog-post">
+      <img src="weaving.jpg" alt="Close-up of traditional handwoven Bukidnon textiles">
+      <div class="blog-post-content">
+        <h2>The Art of Traditional Weaving: Threads of Heritage</h2>
+        
+        <div class="post-meta">
+          <span>👤 Jessie Antiquin</span>
+          <span>📅 October 28, 2025</span>
+        </div>
+
+        <p class="post-excerpt">
+          Delve into the intricate world of Bukidnon's traditional weaving, where every thread tells a story and every pattern holds ancestral meaning.
+        </p>
+
+        <div class="post-content" id="post2">
+In the highlands of Bukidnon, the ancient art of traditional weaving continues to flourish, carried forward by skilled artisans who learned their craft from generations past. Using backstrap looms and natural fibers, weavers create stunning textiles that are far more than mere fabric they are living repositories of cultural knowledge and identity.
+
+The traditional weaving process begins with preparing abaca or cotton fibers, which are carefully extracted, cleaned, and dyed using natural colorants from plants, roots, and minerals. Indigo creates deep blues, turmeric produces warm yellows, and various barks yield earthy browns and reds. These natural dyes not only create beautiful colors but also connect weavers to the land and its resources.
+
+The patterns woven into the cloth are not arbitrary designs. Each geometric motif carries specific meanings—some represent mountains and rivers of the ancestral domain, others symbolize unity among tribes, and still others depict important cultural symbols like the binudbaran (dragon) or the katig (outrigger). The most intricate patterns require months of painstaking work, with weavers counting each thread to ensure perfect symmetry.
+
+Traditional textiles serve multiple purposes in indigenous communities. They are worn during important ceremonies, given as gifts to mark significant life events, and used in ritual offerings. The quality of one's woven cloth often reflects social status and weaving skill is highly respected.
+
+Today, young weavers are learning alongside their elders, ensuring this precious art form survives. Organizations are helping artisans access wider markets while maintaining fair trade practices. When you purchase authentic Bukidnon textiles, you're not just buying beautiful fabric—you're supporting cultural preservation and empowering indigenous communities to continue their ancestral traditions.
+        </div>
+
+        <button class="btn btn-primary" onclick="togglePost('post2', this)">Read More</button>
+      </div>
+    </article>
+
+    <article class="blog-post">
+      <img src="ritual.jpg" alt="Indigenous ritual ceremony in Bukidnon">
+      <div class="blog-post-content">
+        <h2>Sacred Rituals and Spiritual Practices of the Mountains</h2>
+        
+        <div class="post-meta">
+          <span>👤 Dodong Cahapay</span>
+          <span>📅 October 28, 2025</span>
+        </div>
+
+        <p class="post-excerpt">
+          Explore the spiritual traditions that connect Bukidnon's indigenous peoples to their ancestors, the land, and the natural world around them.
+        </p>
+
+        <div class="post-content" id="post3">
+The indigenous peoples of Bukidnon maintain a rich spiritual tradition that views the natural world as sacred and interconnected. Their rituals and ceremonies reflect a deep understanding that humans are not separate from nature, but an integral part of a living, breathing ecosystem.
+
+Central to indigenous spirituality is the belief in "diwata" (nature spirits) who inhabit mountains, rivers, trees, and rocks. Before planting crops, hunting, or entering sacred areas, rituals are performed to ask permission and give thanks to these spirits. The "datu" or tribal leader often serves as spiritual intermediary, conducting ceremonies with offerings of betel nut, rice wine, and sometimes animal sacrifice.
+
+The "pangalay" or thanksgiving ritual is particularly important, performed after harvests to express gratitude to the earth and spirits for their bounty. Participants gather in a circle, sharing food and drink while the datu chants prayers in the ancient language. This ritual reinforces community bonds while acknowledging the interdependence of all living things.
+
+Healing rituals also play a crucial role in indigenous culture. Traditional healers, known as "babaylan" or "balyan," use a combination of herbal medicine, ritual chanting, and spiritual practices to treat illness. They believe many ailments stem from spiritual imbalance or offended nature spirits, requiring both physical and spiritual healing.
+
+Coming-of-age ceremonies mark the transition from childhood to adulthood, with different rituals for boys and girls. These ceremonies teach cultural values, responsibilities, and traditional knowledge necessary for adult life in the community.
+
+Despite centuries of external influence, these spiritual practices persist because they provide meaning, identity, and practical guidance for living in harmony with the environment. They remind us that indigenous wisdom offers valuable lessons about sustainability, community, and respect for all life.
+        </div>
+
+        <button class="btn btn-primary" onclick="togglePost('post3', this)">Read More</button>
+      </div>
+    </article>
+  
+    <article class="blog-post">
+      <img src="datu.jpeg" alt="Close-up of traditional handwoven Bukidnon textiles">
+      <div class="blog-post-content">
+        <h2>Leadership & Harmony</h2>
+        
+        <div class="post-meta">
+          <span>👤 Jhon Bolaton</span>
+          <span>📅 October 28, 2025</span>
+        </div>
+
+        <p class="post-excerpt">In the heart of Mindanao lies the province of Bukidnon, a land known for its rolling highlands, fertile soil, and deeply rooted traditions. Beyond its breathtaking landscape, Bukidnon is home to people who live by values that have been passed down for generations — one of the most important being harmony and leadership.</p>
+
+        <div class="post-content" id="post4">Among the seven indigenous tribes — Bukidnon, Higaonon, Manobo, Matigsalug, Talaandig, Tigwahanon, and Umayamnon — leadership is not about power, but about service, wisdom, and balance. These values shape the lives of the Bukidnon people and guide their way of living in peace with each other and with nature.
+
+The Role of the Datu: A Leader with a Purpose
+
+In Bukidnon society, the Datu serves as the tribal leader or chieftain. But unlike modern political leaders, a Datu’s authority comes from respect, wisdom, and moral integrity, not wealth or status.
+
+A Datu is chosen for their honesty, fairness, and ability to maintain peace. They act as a mediator in conflicts, a guide in decision-making, and a protector of traditions. The people trust the Datu to speak with fairness, always seeking what is right for the community rather than for personal gain.
+
+This kind of leadership creates harmony — because it is rooted in mutual respect and collective well-being.
+
+The “Tampuda hu Balagon”: A Symbol of Peace
+
+One of Bukidnon’s most meaningful cultural practices is the “Tampuda hu Balagon”, which literally means “peace pact.”
+
+When tribes or families are in conflict, the Datu calls for a Tampuda hu Balagon to settle disputes peacefully. Instead of violence, both sides come together, perform a ritual, and promise reconciliation. The act of binding vines (balagon) symbolizes unity and forgiveness — showing that peace is stronger than anger or division.
+
+This practice reflects the Bukidnon people’s deep belief in restoring balance rather than causing harm. It’s a powerful tradition that teaches how true leadership values peace above pride.
+
+Harmony with Nature and the Spirit World
+
+Leadership in Bukidnon culture also extends beyond human relationships. The Datu and tribal elders are responsible for maintaining harmony with nature and the spirit world.
+
+Before planting, hunting, or building, they perform rituals (pamuhat or kaliga) to ask permission from the spirits that dwell in rivers, forests, and mountains. This shows their respect for nature and their understanding that humans are merely stewards of the land.
+
+This kind of leadership — one that honors both people and the environment — keeps their society in balance and harmony.
+
+The Strength of Unity
+
+What makes Bukidnon’s concept of leadership special is that it’s shared. The Datu listens to the voices of the elders, women, and even the youth. Decisions are made through consultation, reflecting the belief that everyone has a role in maintaining peace.
+
+This strong sense of community ensures that no one is left behind — every person is part of the greater whole. When harmony exists, people live in cooperation, not competition.
+
+A Model of Peaceful Leadership
+
+In today’s fast-changing world, the Bukidnon tribes remind us that true leadership is not about control, but about care. It’s about leading with humility, protecting what is good, and restoring what is broken.
+
+Through the wisdom of their Datus, their commitment to peace through the Tampuda hu Balagon, and their respect for all living things, the people of Bukidnon show that harmony and leadership can walk hand in hand — creating a community that thrives not through power, but through peace.</div>
+
+        <button class="btn btn-primary" onclick="togglePost('post4', this)">Read More</button>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>Bukidnon Culture</h3>
+          <p style="opacity: 0.9; font-size: 0.875rem;">
+            Celebrating and preserving the rich cultural heritage of Bukidnon's indigenous communities.
+          </p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Connect With Us</h4>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">f</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">📷</a>
+            <a href="mailto:info@bukidnonculture.com" class="social-link" aria-label="Email">✉</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Niko & Friends Blog. All right.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Back to top">
+    ↑
+  </button>
+
+  <script>
+    function togglePost(postId, button) {
+      const content = document.getElementById(postId);
+      content.classList.toggle('expanded');
+      button.textContent = content.classList.contains('expanded') ? 'Show Less' : 'Read More';
+    }
+
+    window.addEventListener('scroll', function() {
+      const backToTop = document.querySelector('.back-to-top');
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>

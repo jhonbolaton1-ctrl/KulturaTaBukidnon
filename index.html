@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bukidnon Cultural Heritage - Celebrating Indigenous Traditions</title>
+  <meta name="description" content="Explore the vibrant culture, traditions, and indigenous heritage of Bukidnon - from colorful festivals to ancient weaving traditions.">
+  <meta name="author" content="Bukidnon Culture Blog">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+
+    <nav class="container">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="logon.jpg" alt="Logo" class="logo-img">KulturaTaBukidnon</a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="bgj.jpg" alt="Bukidnon cultural heritage featuring traditional textiles and mountain landscapes" class="hero-image">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>IN MADAGAY NGA KULTURA TA BUKIDNON</h1>
+        <p>Celebrating Indigenous Traditions, Stories, and Timeless Wisdom</p>
+        <a href="blog.html" class="btn btn-primary">Explore Our Stories</a>
+      </div>
+    </section>
+
+    <section class="container fade-in">
+      <h2 class="section-title">Welcome to Our Cultural Journey</h2>
+      <div class="section-description">
+        <p style="margin-bottom: 1rem;">
+          Bukidnon, meaning "people of the mountains," is home to rich indigenous cultures that have thrived for centuries. 
+          This blog is dedicated to sharing the vibrant traditions, festivals, crafts, and wisdom of Bukidnon's indigenous communities.
+        </p>
+        <p>
+          Join us as we explore colorful festivals like Kaamulan, intricate weaving traditions, ancient rituals, 
+          and the deep connection between the people and their ancestral lands.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-muted">
+      <div class="container">
+        <h2 class="section-title">Featured Cultural Highlights</h2>
+        <div class="card-grid">
+          <div class="card">
+            <img src="kaamulan.jpg" alt="Kaamulan Festival celebration with indigenous dancers in traditional costumes">
+            <div class="card-content">
+              <h3 class="card-title">Kaamulan Festival</h3>
+              <p class="card-text">
+                Discover the vibrant celebration that brings together seven indigenous tribes in a spectacular 
+                display of culture, music, and tradition.
+              </p>
+              <a href="blog.html" class="btn btn-outline">Read More</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="weaving.jpg" alt="Traditional Bukidnon handwoven textiles with intricate patterns">
+            <div class="card-content">
+              <h3 class="card-title">Traditional Weaving</h3>
+              <p class="card-text">
+                Explore the ancient art of handweaving that creates stunning textiles, each pattern telling 
+                stories passed down through generations.
+              </p>
+              <a href="blog.html" class="btn btn-outline">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <h2 class="section-title">Join Our Community</h2>
+      <div class="section-description">
+        <p style="margin-bottom: 2rem;">
+          Stay connected and be part of preserving and celebrating Bukidnon's rich cultural heritage. 
+          Share your stories, learn about traditions, and help keep these beautiful customs alive.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+          <a href="blog.html" class="btn btn-primary">Read the Blog</a>
+          <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>Bukidnon Culture</h3>
+          <p style="opacity: 0.9; font-size: 0.875rem;">
+            Celebrating and preserving the rich cultural heritage of Bukidnon's indigenous communities.
+          </p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Connect With Us</h4>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">f</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">📷</a>
+            <a href="mailto:info@bukidnonculture.com" class="social-link" aria-label="Email">✉</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kumander Jessie & Friends Blog. All right.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Back to top">
+    ↑
+  </button>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      const backToTop = document.querySelector('.back-to-top');
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>
